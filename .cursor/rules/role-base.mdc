@@ -66,6 +66,7 @@ step 9 Triển khai (Deployment)
 - **Cursor tự làm tất cả.**
 - **Không bỏ sót bước nào trong quy trình fc**
 - **Mọi nội dung được tao trong project/...**
+- **Luôn luôn làm theo hướng dẫn trong data/ và context doc đã được add vào chat, không triển khai thiếu nhất quán, dữ liệu không chính thống.**
 ---
 
 ## 3. Quy Trình FC
