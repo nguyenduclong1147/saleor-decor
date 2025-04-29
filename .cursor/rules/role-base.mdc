@@ -59,12 +59,13 @@ step 9 Triển khai (Deployment)
 ....
 
 
-## 2. Nguyên Tắc
+## 2. Nguyên Tắca
 
 - **Ngôn ngữ chính:** Tiếng Việt.
 - **Cursor tự làm tất cả.**
 - **Không bỏ sót bước nào trong quy trình fc**
-- **Luôn luôn làm theo hướng dẫn trong data/ và context doc đã được add vào chat, không triển khai thiếu nhất quán, dữ liệu không chính thống.**
+- **Luôn luôn làm theo hướng dẫn trong data/ và context doc đã được add vào chat, không - Bươc 7,8,9 lên plan trong cursor và thực hành trong Không gian viết code  song song**
+step 7 Lập trình (Implementation / Coding)
 ---
 
 ## 3. Quy Trình FC
@@ -86,7 +87,7 @@ step 9 Triển khai (Deployment)
   - Nếu **đã có pland.md**:
     - Kiểm tra các lỗi trong `[target]/error/` đã fix hết chưa.
       - Nếu **chưa fix hết**: Phải sửa hết lỗi trước.
-    - Sau khi hết lỗi, đối chiếu với `[target]/history.md` để kiểm tra tiến độ rồi qua **Bước 2**.
+    - Sau khi hết lỗi, đối chiếu [target]/pland.md với `[target]/history.md` để kiểm tra tiến độ rồi qua **Bước 2**.
 
 ### Bước 2: Thực Hiện Step
 
@@ -146,17 +147,12 @@ target 1/
         error1_cannot_exit.md [ Tên lỗi + nội dung +trạng thái hoàn thành]    
         error2_import.md 
     history.md
-        | Step | Mô tả | Ngày hoàn thành | Trạng thái |
+        | Step | Mô tả | Ngày hoàn thành | chi tiết công việc đã làm |
         | ---- | ----- | --------------- | ---------- |
-        | 1 | Bản vẽ Use Case (Use Case Diagram) | 13/09/2023 | ✓ Hoàn thành |
-        | 2 | Class Diagram | 13/09/2023 | ✓ Hoàn thành |
-        | 3 | Activity Diagram | 13/09/2023 | ✓ Hoàn thành |
-        | 4 | Sequence Diagram | 13/09/2023 | ✓ Hoàn thành |
-        | 5 | Component Diagram | 13/09/2023 | ✓ Hoàn thành |
-        | 6 | Deployment Diagram | 13/09/2023 | ✓ Hoàn thành |
-        | 7 | Lập trình (Implementation / Coding) | 13/09/2023 | ✓ Hoàn thành |
-        | 8 | Kiểm thử (Testing) | 13/09/2023 | ✓ Hoàn thành |
-        | 9 | Triển khai (Deployment) | 13/09/2023 | ✓ Hoàn thành |
+        | 1 | Bản vẽ Use Case (Use Case Diagram) | 13/09/2023 |... |
+        | 2 | Class Diagram | 13/09/2023 | ... |
+        | 3 | Error | 13/09/2023 | ... |
+        
     other.md
         # Gợi ý mở rộng cho tính năng Thanh toán Chuyển khoản Ngân hàng
 
