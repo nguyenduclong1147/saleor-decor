@@ -3,3 +3,5 @@ description:
 globs: 
 alwaysApply: true
 ---
+Hệ điều hành: Windows
+Không gian triển khai: project

@@ -136,7 +136,7 @@ step 9 Triển khai (Deployment)
 --- 
 
 
-## 5. Ví dụ minh hoạ:
+Ví dụ:
 data/
     medusajs-medusa-1.md
 target.md
@@ -150,10 +150,14 @@ target 1/
         | Step | Mô tả | Ngày hoàn thành | Trạng thái |
         | ---- | ----- | --------------- | ---------- |
         | 1 | Bản vẽ Use Case (Use Case Diagram) | 13/09/2023 | ✓ Hoàn thành |
-        | 2 | **Chọn phương thức thanh toán BT** | 13/09/2023 | ✓ Hoàn thành |
-        | 3 | Activity Diagram | 13/09/2023 | ✓ Chưa hoàn thành |
-        | 3 | error2_import | 13/09/2023 | ✓ Chưa hoàn thành |
-        ...
+        | 2 | Class Diagram | 13/09/2023 | ✓ Hoàn thành |
+        | 3 | Activity Diagram | 13/09/2023 | ✓ Hoàn thành |
+        | 4 | Sequence Diagram | 13/09/2023 | ✓ Hoàn thành |
+        | 5 | Component Diagram | 13/09/2023 | ✓ Hoàn thành |
+        | 6 | Deployment Diagram | 13/09/2023 | ✓ Hoàn thành |
+        | 7 | Lập trình (Implementation / Coding) | 13/09/2023 | ✓ Hoàn thành |
+        | 8 | Kiểm thử (Testing) | 13/09/2023 | ✓ Hoàn thành |
+        | 9 | Triển khai (Deployment) | 13/09/2023 | ✓ Hoàn thành |
     other.md
         # Gợi ý mở rộng cho tính năng Thanh toán Chuyển khoản Ngân hàng
 
@@ -187,4 +191,3 @@ target 1/
         ....
 target 2/  
         ...
---- 
