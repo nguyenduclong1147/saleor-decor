@@ -1,7 +1,7 @@
 ---
 description: 
 globs: 
-alwaysApply: true
+alwaysApply: false
 ---
 # Hướng Dẫn Quy Trình FC (Feature Completion)
 
