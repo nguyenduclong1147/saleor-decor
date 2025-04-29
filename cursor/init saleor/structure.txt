@@ -1,0 +1,71 @@
+Folder PATH listing
+Volume serial number is 660D-5937
+C:.
+|   GUIDELINES.md
+|   
++---.cursor
+|   \---rules
+|           config.mdc
+|           enforce-guidelines.mdc
+|           role-base.mdc
+|           
++---cursor
+|   +---init saleor
+|   |   |   config.md
+|   |   |   README.md
+|   |   |   structure.txt
+|   |   |   target.md
+|   |   |   
+|   |   +---data
+|   |   |       docs.md
+|   |   |       
+|   |   \---target 1
+|   |       |   history.md
+|   |       |   other.md
+|   |       |   pland.md
+|   |       |   
+|   |       +---docs
+|   |       |   \---step4
+|   |       |           sequence_diagram.md
+|   |       |           
+|   |       +---error
+|   |       \---pland
+|   |               step1.md
+|   |               step1_doc.md
+|   |               step2.md
+|   |               step2_doc.md
+|   |               step3.md
+|   |               step3_doc.md
+|   |               step4.md
+|   |               step4_doc.md
+|   |               step5.md
+|   |               step5_doc.md
+|   |               
+|   \---temp
+|       |   config.md
+|       |   README.md
+|       |   structure.txt
+|       |   target.md
+|       |   
+|       +---data
+|       \---target 1
+|           |   history.md
+|           |   other.md
+|           |   
+|           +---error
+|           \---pland
+|                   step1.md
+|                   step1_doc.md
+|                   
+\---project
+    +---cursor
+    |   \---init saleor
+    |       \---target 1
+    |           \---docs
+    |               +---step4
+    |               |       sequence_diagram.md
+    |               |       
+    |               \---step5
+    |                       component_diagram.md
+    |                       
+    \---saleor

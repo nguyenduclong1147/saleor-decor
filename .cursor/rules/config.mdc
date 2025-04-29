@@ -4,4 +4,5 @@ globs:
 alwaysApply: true
 ---
 Hệ điều hành: Windows
-Không gian triển khai: project
+Không gian viết tài liệu: cursor
+Không gian viết code code: project

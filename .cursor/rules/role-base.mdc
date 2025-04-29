@@ -18,7 +18,6 @@ alwaysApply: true
 - `[target]/README.md`: Hướng dẫn sử dụng feature.
 - `[target]/pland.md`: Kế hoạch hoàn thành, bao gồm nhiều step.
 - `[target]/other.md`: Tài liệu mở rộng.
-- `[target]/docs/`: Tài liệu mở rộng.
 - `data/` *(read-only)*: Tài liệu hướng dẫn cho cursor hoàn thiện feature, khoanh vùng kiến thức, chỉ dẫn.
   > **Ghi chú:** Không được phép sửa file này.
 - `[target]/error/`:
@@ -32,20 +31,20 @@ alwaysApply: true
 
 ---
 Chi tiết nội dung pland.md:
-target 1 (Sau mỗi bước lưu kết quả cursor/[tên nhiệm vụ]/docs/target 1)
-step 1 Bản vẽ Use Case (Use Case Diagram) ->( lưu kết quả cursor/[tên nhiệm vụ]/docs/target 1)
+target 1 (Sau mỗi bước lưu kết quả cursor/[tên nhiệm vụ]/[target]/pland/)
+step 1 Bản vẽ Use Case (Use Case Diagram) ->( lưu kết quả cursor/[tên nhiệm vụ]/[target]/pland/target 1)
 step 2 Classs Diagarm: Bản vẽ về Class(lớp)
 step 3 Activity Diagram: Bản vẽ hoạt động
 step 4 Sequence Diagram: Bản vẽ tuần tự
 step 5 Component Diagram: Bản vẽ thành phần
-step 6 Deployment Diagram: Bản vẽ triển khai
+step 6 Deployment Diagram: Bản vẽ triển khaiss
 step 7 Lập trình (Implementation / Coding)
 7.1
 7.2
 ...
 step 8 Kiểm thử (Testing)
 step 9 Triển khai (Deployment)
-(target 2) (Sau mỗi bước lưu kết quả cursor/[tên nhiệm vụ]/docs/target 2)
+(target 2) (Sau mỗi bước lưu kết quả cursor/[tên nhiệm vụ]/[target]/pland/)
 
 step 1 Bản vẽ Use Case (Use Case Diagram)
 step 2 Classs Diagarm: Bản vẽ về Class(lớp)
@@ -65,7 +64,6 @@ step 9 Triển khai (Deployment)
 - **Ngôn ngữ chính:** Tiếng Việt.
 - **Cursor tự làm tất cả.**
 - **Không bỏ sót bước nào trong quy trình fc**
-- **Mọi nội dung được tao trong project/...**
 - **Luôn luôn làm theo hướng dẫn trong data/ và context doc đã được add vào chat, không triển khai thiếu nhất quán, dữ liệu không chính thống.**
 ---
 
