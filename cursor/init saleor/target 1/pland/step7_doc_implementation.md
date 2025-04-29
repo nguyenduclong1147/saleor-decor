@@ -52,13 +52,21 @@
    npm install
    npm start
    ```
-
+API_URL=http://localhost:8000/graphql/
+APP_MOUNT_URI=/
+APPS_MARKETPLACE_API_URL=https://apps.saleor.io/api/v2/saleor-apps
+EXTENSIONS_API_URL=https://apps.saleor.io/api/v1/extensions
+LOCALE_CODE="EN"
+DEMO_MODE=false 
 3. **Saleor Storefront**:
    ```bash
    cd react-storefront
    npm install
    npm run dev
    ```
+NEXT_PUBLIC_SALEOR_API_URL=http://localhost:8000/graphql/
+NEXT_PUBLIC_STOREFRONT_URL=http://localhost:3000
+
 
 Hoặc sử dụng script `start.sh` (Linux/Mac) hoặc `start.bat` (Windows) để khởi động toàn bộ hệ thống một cách dễ dàng.
 
