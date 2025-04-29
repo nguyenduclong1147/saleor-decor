@@ -1,0 +1,188 @@
+# Hướng Dẫn Quy Trình FC (Feature Completion)
+
+**Bạn bắt buộc tuân theo lệnh, không được làm trái.**
+
+## 1. Cấu Trúc Thư Mục
+
+### cursor/[tên nhiệm vụ]
+
+- `config.md`: Cấu hình chung dự án.
+- `structure.txt`: Cấu trúc tổng thể project.
+- `target.md`: Mục tiêu hoàn thành - Trạng thái.
+- `[target]/history.md`: Ghi lại lịch sử hoàn thành step.
+- `[target]/README.md`: Hướng dẫn sử dụng feature.
+- `[target]/pland.md`: Kế hoạch hoàn thành, bao gồm nhiều step.
+- `[target]/other.md`: Tài liệu mở rộng.
+- `[target]/docs/`: Tài liệu mở rộng.
+- `data/` *(read-only)*: Tài liệu hướng dẫn cho cursor hoàn thiện feature, khoanh vùng kiến thức, chỉ dẫn.
+  > **Ghi chú:** Không được phép sửa file này.
+- `[target]/error/`:
+  - `1 error name.md`
+  - `2 error name.md`
+  - ...
+> Mỗi file lỗi gồm:
+> - Lỗi
+> - Chi tiết lỗi
+> - Trạng thái hoàn thành
+
+---
+Chi tiết nội dung pland.md:
+target 1 (Sau mỗi bước lưu kết quả cursor/[tên nhiệm vụ]/docs/target 1)
+step 1 Bản vẽ Use Case (Use Case Diagram) ->( lưu kết quả cursor/[tên nhiệm vụ]/docs/target 1)
+step 2 Classs Diagarm: Bản vẽ về Class(lớp)
+step 3 Activity Diagram: Bản vẽ hoạt động
+step 4 Sequence Diagram: Bản vẽ tuần tự
+step 5 Component Diagram: Bản vẽ thành phần
+step 6 Deployment Diagram: Bản vẽ triển khai
+step 7 Lập trình (Implementation / Coding)
+7.1
+7.2
+...
+step 8 Kiểm thử (Testing)
+step 9 Triển khai (Deployment)
+(target 2) (Sau mỗi bước lưu kết quả cursor/[tên nhiệm vụ]/docs/target 2)
+
+step 1 Bản vẽ Use Case (Use Case Diagram)
+step 2 Classs Diagarm: Bản vẽ về Class(lớp)
+step 3 Activity Diagram: Bản vẽ hoạt động
+step 4 Sequence Diagram: Bản vẽ tuần tự
+step 5 Component Diagram: Bản vẽ thành phần
+step 6 Deployment Diagram: Bản vẽ triển khai
+step 7 Lập trình (Implementation / Coding) (bạn Code luôn)
+step 8 Kiểm thử (Testing)
+step 9 Triển khai (Deployment)
+(target 3)
+....
+
+
+## 2. Nguyên Tắc
+
+- **Ngôn ngữ chính:** Tiếng Việt.
+- **Cursor tự làm tất cả.**
+- **Không bỏ sót bước nào trong quy trình fc**
+- **Mọi nội dung được tao trong project/...**
+---
+
+## 3. Quy Trình FC
+
+### Bước 1: Chuẩn Bị
+
+- Sử dụng lệnh `cd` theo đường dẫn root project trong `config.md` để di chuyển đến thư mục project.
+- Cập nhật cấu trúc project vào `cursor/[tên nhiệm vụ]/structure.txt`:
+  ```bash
+  cd [đường_dẫn_root_project]
+  tree /A /F > cursor/[tên nhiệm vụ]/structure.txt
+  ```
+- Đọc cấu trúc hiểu nghữ cảnh
+- Dọn dẹp folder, file thừa
+- Kiểm tra `[target]/pland.md`, đọc `[target]/target.md`, `[target]/config.md`, `data/*`, `[target]/error/*.md`.
+- Xử lý:
+  - Kiểm tra target.md nếu tất cả target hoàn thành thì dùng nếu chưa thì kiểm trả `[target]/pland.md`
+  - Nếu **pland.md rỗng**: Xem `target.md`, `config.md` rồi lên kế hoạch vào `[target]/pland.md`, sau đó **Bước 2**.
+  - Nếu **đã có pland.md**:
+    - Kiểm tra các lỗi trong `[target]/error/` đã fix hết chưa.
+      - Nếu **chưa fix hết**: Phải sửa hết lỗi trước.
+    - Sau khi hết lỗi, đối chiếu với `[target]/history.md` để kiểm tra tiến độ rồi qua **Bước 2**.
+
+### Bước 2: Thực Hiện Step
+
+- Tiến hành thực hiện step tiếp theo trong `pland.md`, **chỉ sử dụng nội dung hướng dẫn (hiểu biết) trong folder `data/`**.
+- **Không tìm kiếm ngoài folder `data/`**.
+- Xử lý:
+  - Nếu hoàn thành step → **Bước 3**.
+  - Nếu lỗi:
+    - Ưu tiên tìm tài liệu trong `data/`.
+    - Sửa lỗi.
+    - Cập nhật trạng thái lỗi vào `[target]/error/`.
+
+### Bước 3: Kiểm Tra Hoàn Thành Step
+
+- Chạy terminal:
+  ```bash
+  npm run dev
+  ```
+- Đánh giá kết quả:
+  - Nếu hoàn thành: cập nhật `[target]/history.md`, qua **Bước 4**.
+  - Nếu có vấn đề: quay lại **Bước 2**.
+
+### Bước 4: Đánh Giá Kế Hoạch
+
+- Xem xét có cần cập nhật thêm `[target]/pland.md` hay không (tùy chọn).
+
+### Bước 5: Hoàn Thành Kế Hoạch
+
+- Kiểm tra xem đã hoàn thành tất cả các step trong `[target]/pland.md` chưa:
+  - Nếu **đã xong**:
+    - Cập nhật `cursor/[tên nhiệm vụ]/README.md`, `target.md`.
+    - Gợi ý mở rộng vào `[target]/other.md`.
+    - Kết thúc.
+  - Nếu **chưa**: quay lại **Bước 1**.
+
+---
+
+## 4. Lệnh Khởi Động
+
+- **Lệnh khởi động:**
+  fc
+- **Lệnh đi thẳng đến bước:**
+  fc [Bước]
+  Ví dụ: fc 3 (Đi thẳng đến Bước 3)
+
+--- 
+
+
+Ví dụ:
+data/
+    medusajs-medusa-1.md
+target.md
+    target 1: tạo plugin thanh toán chuyển khoản ngân hàng hàng tại Việt Nam vầ tích hơp vào project - đã hoàn thành
+    tartget 2: Tách module ra tạo flugin riềng cho phương thức thành toán thùy chỉnh - chưa hoàn thành
+target 1/
+    error/
+        error1_cannot_exit.md [ Tên lỗi + nội dung +trạng thái hoàn thành]    
+        error2_import.md 
+    history.md
+        | Step | Mô tả | Ngày hoàn thành | Trạng thái |
+        | ---- | ----- | --------------- | ---------- |
+        | 1 | Bản vẽ Use Case (Use Case Diagram) | 13/09/2023 | ✓ Hoàn thành |
+        | 2 | Class Diagram | 13/09/2023 | ✓ Hoàn thành |
+        | 3 | Activity Diagram | 13/09/2023 | ✓ Hoàn thành |
+        | 4 | Sequence Diagram | 13/09/2023 | ✓ Hoàn thành |
+        | 5 | Component Diagram | 13/09/2023 | ✓ Hoàn thành |
+        | 6 | Deployment Diagram | 13/09/2023 | ✓ Hoàn thành |
+        | 7 | Lập trình (Implementation / Coding) | 13/09/2023 | ✓ Hoàn thành |
+        | 8 | Kiểm thử (Testing) | 13/09/2023 | ✓ Hoàn thành |
+        | 9 | Triển khai (Deployment) | 13/09/2023 | ✓ Hoàn thành |
+    other.md
+        # Gợi ý mở rộng cho tính năng Thanh toán Chuyển khoản Ngân hàng
+
+        ## Tính năng mở rộng có thể phát triển trong tương lai
+
+        1. **Tích hợp API ngân hàng**:
+        - Kết nối với API của các ngân hàng lớn tại Việt Nam để kiểm tra giao dịch tự động
+        - Cho phép xác minh chuyển khoản mà không cần can thiệp thủ công
+    pland/
+        step1.md
+            1. **Chọn phương thức thanh toán BT**
+            2. **Xem thông tin chuyển khoản ngân hàng
+        step_doc_1.md
+            # Use Case Diagram cho tính năng thanh toán chuyển khoản ngân hàng
+
+            ## Mô tả
+
+            Use Case Diagram mô tả các tương tác giữa người dùng (actors) và hệ thống thanh toán chuyển khoản ngân hàng trong Medusa.
+
+            ## Actors
+
+            1. **Khách hàng** - Người thực hiện thanh toán đơn hàng
+            2. **Admin/Nhân viên** - Người quản lý và xác nhận thanh toán
+            3. **Hệ thống ngân hàng** - Bên thứ ba xử lý giao dịch (không tương tác trực tiếp với hệ thống)
+
+            ...
+        step_2.md
+        step_2_doc.md
+        step_3.md
+        step_3_doc.md
+        ....
+target 2/  
+        ...
